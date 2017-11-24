@@ -1,3 +1,17 @@
+@media  (max-width: 992px) {
+    figure figcaption{
+        font-size: 1.2em;
+    }
+    div.detail{
+        height: 480px;
+        width: 600px;
+        overflow: hidden;
+    }
+    div.detail img{
+        height: 480px;
+    }
+}
+
 body{
     counter-reset: figures;
 }
@@ -16,13 +30,14 @@ figure figcaption:before {
     content: '序号.' counter(figures) ' -- ';
 }
 
+
 header{
     margin-bottom: 10px;
 }
 .items{
     margin-bottom: 10px;
 }
-.items > div{
+.items > div >div{
     margin-bottom: 5px;
 }
 .item img{
