@@ -47,10 +47,15 @@ header{
 
 .detail{
     height: 350px;
-    width: 420px;
+    width: 500px;
     overflow: hidden;
 }
 
+@media  (max-width: 1200px){
+    .detail{
+        width: 460px;
+    }
+}
 
 @media  (max-width: 992px) {
     figure figcaption{
