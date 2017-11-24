@@ -1,0 +1,26 @@
+header{
+    margin-bottom: 10px;
+}
+.items{
+    margin-bottom: 15px;
+}
+.item img{
+    height: 300px;
+    width: 100px;
+}
+.item-sm{
+    margin-left: 12px;
+}
+.item-sm img{
+    height: 260px;
+    width: 68px;
+}
+.detail img{
+    height: 380px;
+}
+
+.detail{
+    height: 350px;
+    width: 420px;
+    overflow: hidden;
+}
