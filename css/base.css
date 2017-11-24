@@ -1,8 +1,29 @@
+body{
+    counter-reset: figures;
+}
+figure figcaption {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    padding: .5em;
+    text-align: center;
+    color: #fff;
+    background: #f5bca8;
+    counter-increment: figures;
+}
+figure figcaption:before {
+    content: '序号.' counter(figures) ' -- ';
+}
+
 header{
     margin-bottom: 10px;
 }
 .items{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+.items > div{
+    margin-bottom: 5px;
 }
 .item img{
     height: 300px;
