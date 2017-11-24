@@ -1,16 +1,3 @@
-@media  (max-width: 992px) {
-    figure figcaption{
-        font-size: 1.2em;
-    }
-    div.detail{
-        height: 480px;
-        width: 600px;
-        overflow: hidden;
-    }
-    div.detail img{
-        height: 480px;
-    }
-}
 
 body{
     counter-reset: figures;
@@ -40,13 +27,16 @@ header{
 .items > div >div{
     margin-bottom: 5px;
 }
+.item-box{
+    text-align: center;
+}
 .item img{
     height: 300px;
     width: 100px;
 }
-.item-sm{
-    margin-left: 12px;
-}
+/*.item-sm{*/
+    /*margin-left: 12px;*/
+/*}*/
 .item-sm img{
     height: 260px;
     width: 68px;
@@ -59,4 +49,25 @@ header{
     height: 350px;
     width: 420px;
     overflow: hidden;
+}
+
+
+@media  (max-width: 992px) {
+    figure figcaption{
+        font-size: 2.2em;
+    }
+    .item img,.item-sm img{
+        width: 250px;
+        height:auto;
+        transform: rotate(90deg);
+    }
+    div.detail{
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    div.detail img{
+        height: auto;
+        width: 100%;
+    }
 }
